@@ -26,5 +26,5 @@ RUN chmod 777 /data
 COPY inst/run.sh /run.sh
 RUN ls hadoop-example-native/src/main/resources/
 RUN java -cp "hadoop-lib/lib/*" org.deeplearning4j.App /hadoop-example-native/src/main/resources/conf/ir.properties
-ENTRYPOINT ["/bin/bash", "/run.sh" ]
+#ENTRYPOINT ["/bin/bash", "/run.sh" ]
 

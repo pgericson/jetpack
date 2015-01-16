@@ -67,7 +67,6 @@ case "$1" in
     docker run -i -t startupml/mllib /etc/bootstrap.sh -bash
   ;;
   deeplearning4j)
-    docker run -i -t startupml/deeplearning4j
-    #docker image cod CDH4.6 tasktracker
+    docker run -it startupml/deeplearning4j /bin/bash
   ;;
 esac
