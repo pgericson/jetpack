@@ -6,6 +6,8 @@ RUN cd /usr/local && ln -s spark-1.2.0-bin-hadoop2.4 spark
 ENV SPARK_HOME /usr/local/spark
 RUN mkdir $SPARK_HOME/yarn-remote-client
 ADD yarn-remote-client $SPARK_HOME/yarn-remote-client
+ADD code /root/code
+ADD dataset /root/dataset
 RUN mv /usr/local/spark/conf/log4j.properties.template /usr/local/spark/conf/log4j.properties
 RUN sed -i -e 's/INFO, console/ERROR, console/g' /usr/local/spark/conf/log4j.properties
 
