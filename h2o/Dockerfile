@@ -11,4 +11,4 @@ RUN wget https://s3.amazonaws.com/h2o-training/higgs/higgs.100k.csv.gz
 
 EXPOSE 8996
 
-ENTRYPOINT java -jar /h2o/h2o.jar -port 8996 -name MyH2O
+ENTRYPOINT java -Xmx1g -jar /h2o/h2o.jar -port 8996 -name MyH2O
