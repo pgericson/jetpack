@@ -69,4 +69,7 @@ case "$1" in
   deeplearning4j)
     docker run -it startupml/deeplearning4j /bin/bash
   ;;
+  torch7)
+    docker run -it startupml/torch7 th
+  ;;
 esac
