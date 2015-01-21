@@ -1,8 +1,6 @@
 #Machine Learning Tools in Docker
 
-![startupml](http://static1.squarespace.com/static/5492f8efe4b0d6fbcfc57062/t/54bd24d6e4b0877cb7eacc94/1421681878771/?format=500w)
 ![docker](http://blog.docker.com/wp-content/uploads/2013/08/KuDr42X_ITXghJhSInDZekNEF0jLt3NeVxtRye3tqco.png)
-
 
 Machine learning tools are notorious for having byzantine dependencies and often academic code quality. This makes them hard to install and configure correctly across different machines and operating systems.  At  [Startup.ML](http://startup.ml/) we have been using Docker to simplify the process of getting these tools on our machines.
 
