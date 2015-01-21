@@ -38,11 +38,4 @@ RUN cd pylearn2 && python setup.py develop
 # Test
 RUN python -c "import numpy, scipy, pandas, matplotlib, matplotlib.pyplot, sklearn, seaborn, statsmodels, theano"
 
-# Get Theano exercices
-RUN git clone https://github.com/nouiz/nextml2015.git
-
-# Get the dataset.
-RUN wget --quiet http://www.iro.umontreal.ca/~lisa/deep/data/imdb.pkl.gz && gunzip imdb.pkl.gz
-
-
 CMD ipython notebook --no-browser --ip 0.0.0.0 --port 8999

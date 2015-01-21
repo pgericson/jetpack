@@ -31,7 +31,4 @@ RUN (mkdir -p ~/.graphlab && echo "[Product]\nproduct_key=XXXX-XXXX-XXXX-XXXX-XX
 
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/opt/miniconda/lib
 
-RUN wget --no-check-certificate https://s3-us-west-2.amazonaws.com/gl-training/next_ml_exercises.zip
-RUN unzip next_ml_exercises.zip -d next_ml_exercises
-
 CMD ipython notebook --no-browser --ip 0.0.0.0 --port 8997
