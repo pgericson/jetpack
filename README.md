@@ -16,10 +16,12 @@ Machine learning tools are notorious for having byzantine dependencies and often
 * Vowpal Wabbit (VW)
 
 ## Getting started
+### Step 0: Prerequisites for OSX
 * First step is to [Install Docker on Mac OS X](https://github.com/boot2docker/osx-installer/releases/download/v1.4.1/Boot2Docker-1.4.1.pkg). 
 * Once Boot2Docker has been installed, launch it from Spotlight
 * In the terminal window with the title "Boot2Docker for OSX" go to the jetpack directory and start the build process (*be patient, the builds can take some time*)
 
+### Step 1: For Linux and OSX
 To build an individual image, provide it as an argument to the build.sh script. 
 
 ```
